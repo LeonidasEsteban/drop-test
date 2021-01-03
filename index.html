@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="./css/styles.css">
+  <!-- favicon -->
+  <link rel="preconnect" href="https://fonts.gstatic.com">
+  <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;700&display=swap" rel="stylesheet">
+  <title>Medium</title>
+</head>
+<body>
+  <section class="hero">
+    <div class="wrapper">
+      <div class="hero-content">
+        <h1>
+          Curso esencial de HTML y CSS
+          <span>This is the way</span>
+        </h1>
+      </div>
+    </div>
+  </section>
+
+  <main class="main">
+    <div class="wrapper">
+      <div class="main-content">
+        <div class="menu">
+          <details open>
+            <summary>
+              Temario
+            </summary>
+            <ol>
+              <li>
+                <a href="#setup">Setup</a>
+              </li>
+              <li>
+                <a href="#html-css">HTML y CSS</a>
+              </li>
+            </ol>
+          </details>
+        </div>
+        <p>Este es el inicio de tu carrera como Desarrollador Web, empezarás aprendiendo HTML y CSS para la creación de contenidos</p>
+        <h2 id="setup">Setup</h2>
+        <p>
+          <img class="decoration-right" src="./images/vsc.png" width="100" height="100" alt="visual studio code logo" />
+          Todo buen profesional domina sus herramientas de trabajo y les saca el máximo provecho, por eso en este curso vas a aprender a usar Visual Studio Code, Google Developer Tools y Github
+        </p>
+        <p>In this article, I want to overview my list of the ten most critical frustrations and share practical tips on how to
+          overcome them:</p>
+        <h2 id="uno">Small-sized text</h2>
+        <p>Despite the recent popularity of video format, most information on the web is still in written form. That’s why</p>
+        <blockquote>
+          In this article, I want to overview my list of the ten most critical frustrations and share practical tips on how to
+          overcome them:
+        </blockquote>
+        <p>Here are a few practical tips for you to follow when working with text:</p>
+        <ul>
+          <li>Font size should be <u>minimum 16px</u>. 16px for body text is a good place to start but remember that the bigger the screen
+          size, the larger the text.</li>
+          <li>
+            Aim for line-height to be 1.5em or 1.6em for optimal readability.
+          </li>
+          <li>Always view your designs on an actual device.</li>
+        </ul>
+        <h2 id="dos">Tiny click targets</h2>
+        <p>The smaller the interactive elements (links, buttons, and other UI controls), the more mistakes the user will make when
+        interacting with your website.</p>
+        <blockquote>
+          <q>Do not play ‘hunt a button’ game with your visitors.</q>
+        </blockquote>
+        <img src="./images/hunt-button-is-wrong.png" alt="finding buttons in a user interface">
+        <p>Here are a few good tips:</p>
+        <ul>
+          <li>Touch targets should be finger-friendly. The average size of the touch target should be 9mm x 9mm. Material Design
+          states that touch targets should be at least 48 x 48 px.</li>
+          <li>
+            Add good padding surrounding touch targets. Microsoft guidelines recommend 10mm paddings between touch targets.
+          </li>
+        </ul>
+        <h2>Not working “Back” button</h2>
+        <p>User control and freedom is one of Jakob Nielsen’s 10 usability heuristic of user interface design. It says:</p>
+        <q>Users need a clearly marked “emergency exit” to leave the unwanted action without having to go through an extended
+        process.</q>
+        <p>And the Back button in a browser is this emergency exit. If you are afraid that users will lose their data by clicking
+        the Back button, it’s better to warn users about that by displaying a message “Your work will be lost"on the Back button
+        click.</p>
+        <pre>
+          window.addEventListener("beforeunload", function(event) { ... });
+          window.onbeforeunload = function(event) {
+            // notify about potential data loss here
+          };
+        </pre>
+        <ol>
+          <li>Amet minim mollit non deserunt ullamco est sit aliqua dolor</li>
+          <li>Amet minim mollit non deserunt ullamco est sit aliqua dolor</li>
+          <li>Amet minim mollit non deserunt ullamco est sit aliqua dolor</li>
+        </ol>
+        <h3>Este es un Video de YouTube</h3>
+        <div class="slider">
+          <scroll-container class="slider-content">
+            <scroll-page class="slider-slide" id="video-1">
+              <iframe class="video" width="560" height="315" src="https://www.youtube.com/embed/5f5Ig_U2Bpk" frameborder="0"
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                allowfullscreen></iframe>
+            </scroll-page>
+            <scroll-page class="slider-slide" id="video-2">
+              <iframe class="video" width="560" height="315" src="https://www.youtube.com/embed/5f5Ig_U2Bpk" frameborder="0"
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                allowfullscreen></iframe>
+            </scroll-page>
+            <scroll-page class="slider-slide" id="video-3">
+              <iframe class="video" width="560" height="315" src="https://www.youtube.com/embed/5f5Ig_U2Bpk" frameborder="0"
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                allowfullscreen></iframe>
+            </scroll-page>
+
+          </scroll-container>
+          <div class="slider-bullet-list">
+            <a href="#video-1" class="slider-bullet"></a>
+            <a href="#video-2" class="slider-bullet"></a>
+            <a href="#video-3" class="slider-bullet"></a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </main>
+  <div class="contact">
+    <div class="wrapper">
+      <div class="contact-content">
+        <p>
+          Si tienes alguna pregunta escríbeme a <a href="mailto:me@leonidasesteban.com">me@leonidasesteban.com</a>
+        </p>
+        <form class="contact-form" action="">
+          <h2>Suscríbete a nuestro newsletter</h2>
+            <input class="text-input" type="text" placeholder="Nombre">
+            <input class="text-input" type="email" placeholder="Email">
+            <input class="text-input" type="submit" value="suscribirme">
+        </form>
+      </div>
+    </div>
+  </div>
+</body>
+</html>
+
