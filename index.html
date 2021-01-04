@@ -10,7 +10,7 @@
   <title>Medium</title>
 </head>
 <body>
-  <section class="hero">
+  <section class="hero debug">
     <div class="wrapper">
       <div class="hero-content">
         <h1>
@@ -31,71 +31,121 @@
             </summary>
             <ol>
               <li>
-                <a href="#vsc">Visual Studio Code x</a>
+                <a href="#chrome">Google Chrome</a>
               </li>
               <li>
-                <a href="#html-css">HTML y CSS</a>
+                <a href="#vsc">Visual Studio Code</a>
+              </li>
+              <li>
+                <a href="#figma">Figma</a>
+              </li>
+              <li>
+                <a href="#github">Github</a>
+              </li>
+            </ol>
+          </details>
+          <details open>
+            <summary>
+              Conceptos esenciales
+            </summary>
+            <ol>
+              <li>
+                <a href="#html">Qué es HTML</a>
+              </li>
+              <li>
+                <a href="#etiquetas">Etiquetas</a>
+              </li>
+              <li>
+                <a href="#dom">DOM</a>
+              </li>
+              <li>
+                <a href="#semantica">Semántica</a>
+              </li>
+              <li>
+                <a href="#atributos">Atributos</a>
+              </li>
+              <li>
+                <a href="#css">Qué es CSS</a>
               </li>
             </ol>
           </details>
         </div>
-        <p>Este es el inicio de tu carrera como Desarrollador Web, empezarás aprendiendo HTML y CSS para la creación de contenidos</p>
-        <h2 id="setup">Setup</h2>
+        <p>Este es el inicio de tu carrera como Desarrollador Web, empezarás aprendiendo HTML y CSS para la creación de contenidos, en el nivel 2 aprenderás de componentes y en 3 sobre layouts</p>
+        <h2>Setup</h2>
+        <h3 id="chrome">Google Chrome</h3>
+        <p>Chrome va a ser <strong>el navegador que utilizaremos en el curso</strong> por su extenso soporte de nuevos estándares y herramientas de
+        desarrollo avanzadas y de amigable uso.</p>
+        <h3 id="vsc">Visual Studio Code</h3>
         <p>
           <img class="decoration-right" src="./images/vsc.png" width="100" height="100" alt="visual studio code logo" />
-          Todo buen profesional domina sus herramientas de trabajo y les saca el máximo provecho, por eso en este curso vas a aprender a usar Visual Studio Code, Google Developer Tools y Github
+          Visual Studio Code es el editor de texto más popular y potente del mercado actualmente, su fácil uso y la capacidad de extenderlo por medio de plugins lo hace el complemento perfecto para cualquier programador sin importar el lenguaje en el que se desemvuelva.
         </p>
-        <p>In this article, I want to overview my list of the ten most critical frustrations and share practical tips on how to
-          overcome them:</p>
-        <h2 id="uno">Small-sized text</h2>
-        <p>Despite the recent popularity of video format, most information on the web is still in written form. That’s why</p>
+        <h3 id="figma">Figma</h3>
+        <p>Figma es una la herramienta más popular en la actualidad para entregar diseños a los desarrolladores para su
+        implementación por su <strong>fácil uso</strong> porque puede ser usado directamente desde el navegador.</p>
+        <h3 id="github">GitHub</h3>
+        <p>Así como en Facebook te encuentran tus amigos, en Github te encuentran otras programadoras y programadores de todo el
+        mundo, en vez de subir fotos de tus viajes aquí subes tu código y puedes elegir hacerlo “open source” o guardarlo de
+        manera privada, Github será esencial para almacenar tu futuro portafolio.</p>
         <blockquote>
-          In this article, I want to overview my list of the ten most critical frustrations and share practical tips on how to
-          overcome them:
+          <q>
+            Este es el inicio de tu carrera como Desarrollador Web
+          </q>
         </blockquote>
-        <p>Here are a few practical tips for you to follow when working with text:</p>
-        <ul>
-          <li>Font size should be <u>minimum 16px</u>. 16px for body text is a good place to start but remember that the bigger the screen
-          size, the larger the text.</li>
-          <li>
-            Aim for line-height to be 1.5em or 1.6em for optimal readability.
-          </li>
-          <li>Always view your designs on an actual device.</li>
-        </ul>
-        <h2 id="dos">Tiny click targets</h2>
-        <p>The smaller the interactive elements (links, buttons, and other UI controls), the more mistakes the user will make when
-        interacting with your website.</p>
-        <blockquote>
-          <q>Do not play ‘hunt a button’ game with your visitors.</q>
-        </blockquote>
-        <img src="./images/hunt-button-is-wrong.png" alt="finding buttons in a user interface">
-        <p>Here are a few good tips:</p>
-        <ul>
-          <li>Touch targets should be finger-friendly. The average size of the touch target should be 9mm x 9mm. Material Design
-          states that touch targets should be at least 48 x 48 px.</li>
-          <li>
-            Add good padding surrounding touch targets. Microsoft guidelines recommend 10mm paddings between touch targets.
-          </li>
-        </ul>
-        <h2>Not working “Back” button</h2>
-        <p>User control and freedom is one of Jakob Nielsen’s 10 usability heuristic of user interface design. It says:</p>
-        <q>Users need a clearly marked “emergency exit” to leave the unwanted action without having to go through an extended
-        process.</q>
-        <p>And the Back button in a browser is this emergency exit. If you are afraid that users will lose their data by clicking
-        the Back button, it’s better to warn users about that by displaying a message “Your work will be lost"on the Back button
-        click.</p>
+        <h2>Conceptos esenciales del Desarrollo Web</h2>
+        <h3 id="html">HTML</h3>
+        <p>Hyper Text Markup Language o Lenguaje de marcas Hipertexto. Es el componente más básico de la web. Define el significado
+        y la estructura del contenido.</p>
         <pre>
-          window.addEventListener("beforeunload", function(event) { ... });
-          window.onbeforeunload = function(event) {
-            // notify about potential data loss here
-          };
+&lt;!DOCTYPE html&gt;
+&lt;html lang=&quot;en&quot;&gt;
+&lt;head&gt;
+&lt;meta charset=&quot;UTF-8&quot;&gt;
+&lt;meta name=&quot;viewport&quot; content=&quot;width=device-width, initial-scale=1.0&quot;&gt;
+&lt;title&gt;Document&lt;/title&gt;
+&lt;/head&gt;
+&lt;body&gt;
+
+&lt;/body&gt;
+&lt;/html&gt;
         </pre>
+        <h3 id="etiquetas">Etiquetas</h3>
+        <p>Las etiquetas HTML van a ayudarnos a brindar una estructura y semántica al contenido de nuestro website y cada una tiene
+        características y usos diferentes aunque visualmente den un resultado similar.</p>
+        <p>Muchas etiquetas son fácil de diferencias como los headings o las imágenes y otras diferentes como header, footer,
+        section o div, aquí es donde la semántica será la respuesta y si sabemos un poco de inglés también podremos darnos una
+        pequeña idea de su uso pero en este curso vamos a usar las más importantes y que serán parte de tu día a día como
+        Software Developer.</p>
+
+        <h3 id="dom">DOM</h3>
+        <img src="./images/dom.png" alt="árbol del DOM">
+        <p>El Document Object Model es una estructura de árbol que representará todos nuestros proyectos web como si un árbol
+        genealógico fuera: padres, hijos, hermanos con niveles infinitos. cuando entendemos esta anidación podemos identificar
+        dependencias, herencias en css y que tan complejo es nuestro proyecto.</p>
+
+        <h2>Modelo de caja</h2>
+        <p>El modelo de caja está compuesto por:</p>
         <ol>
-          <li>Amet minim mollit non deserunt ullamco est sit aliqua dolor</li>
-          <li>Amet minim mollit non deserunt ullamco est sit aliqua dolor</li>
-          <li>Amet minim mollit non deserunt ullamco est sit aliqua dolor</li>
+          <li>Tamaño del del contenido / ancho y alto</li>
+          <li>Padding / Relleno</li>
+          <li>Border / Bordes</li>
+          <li>Margin / Márgenes</li>
         </ol>
-        <h3>Este es un Video de YouTube</h3>
+        <p>Propiedades físicas para el modelo de caja:</p>
+        <ul>
+          <li>width / height</li>
+          <li>margin / margin-top | margin-right | margin-bottom | margin-left</li>
+          <li>border / border-top | border-right | border-bottom | border-left</li>
+          <li>padding / padding-top | padding-right | padding-bottom | padding-left</li>
+        </ul>
+        <p>Propiedades lógicas para el modelo de caja:</p>
+        <ul>
+          <li>inline-size / block-size</li>
+          <li>margin-block | margin-inline | margin-block-start | margin-block-end | margin-inline-start | margin-inline-end</li>
+          <li>border-block | border-inline | border-block-start | border-block-end | border-inline-start | border-inline-end</li>
+          <li>padding-block | padding-inline | padding-block-start | padding-block-end | padding-inline-start | padding-inline-end</li>
+        </ul>
+        <h2>Multimedia</h2>
         <div class="slider">
           <scroll-container class="slider-content">
             <scroll-page class="slider-slide" id="video-1">
